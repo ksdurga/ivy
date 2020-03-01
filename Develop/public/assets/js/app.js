@@ -5,7 +5,6 @@ $(document).ready(function(){
   let allWorkouts = [];
   let selectedWorkout = { activities: []};
 
-
   /** ********** DOM Population ********** */
 
   // Populate workout data
@@ -112,7 +111,7 @@ $(document).ready(function(){
     populateActivities();
   });
 
-
+  
   /** ********** API Calls ******************* */
 
   // Retrive a JSON payload of all exercises
@@ -129,7 +128,6 @@ $(document).ready(function(){
         opt.text(exercise.name);
         $("select#exercise").append(opt);
       });
-
     })
   }
 
